@@ -22,7 +22,7 @@ body
 }
 
 #logodiv{
-    margin-top: 35px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,12 +56,13 @@ body
     margin-bottom: 8px;
 }
 
-#regForm p{
+#regForm h5{
     text-align: center;
     margin: 0;
+    font-size: 16px;
 }
 
-#regForm p a{
+#regForm h5 a{
     text-decoration: none;
     text-decoration: underline;
     color: #002a70;
