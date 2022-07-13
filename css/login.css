@@ -25,14 +25,16 @@ body
     height: 100%;
 }
 
-#logodiv{
+#logodiv
+{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#logo{
+#logo
+{
     width: 235px;
     z-index: 1;
 }
@@ -98,11 +100,13 @@ body
     transition: 0.3s;
 }
 
-input {
+input
+{
     line-height: 24px;
 }
 
-br {
+br
+{
     display: block;
     content: "";
     margin-top: 30px;
