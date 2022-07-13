@@ -79,7 +79,7 @@ body
     color: white;
     font-size: 20px;
     text-align: left;
-    margin-left: 80px;
+    margin-left: 0;
     margin-bottom: 8px;
 }
 
@@ -87,6 +87,7 @@ body
 {
     color: white;
     font-size: 16px;
+    text-align: center;
 }
 
 .login-content h5 a
@@ -107,24 +108,33 @@ br {
     margin-top: 30px;
 }
 
+.button
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 input[type=submit]
 {
     cursor: pointer;
     border: 0;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     width: 200px;
     padding: 10px 0;
-    transition: 0.4s;
+    /*transition: 0.3s;*/
     color: white;
     background-color: #f98700;
 }
   
 input[type=submit]:hover
 {
-    transform: scale(1.03);
+    /*transform: scale(1.02);*/
     color: #f98700;
     background-color: white;
+    border: 2px solid #f98700;
+    padding: 8px 0;
     /*background-color: #002a70;*/
 }
