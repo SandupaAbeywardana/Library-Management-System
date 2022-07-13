@@ -75,17 +75,17 @@ body
     text-align: left;
 }
 
-.name input{
+.name input[type=text], .name input[type=password], .name input[type=email]{
     width: auto;
 }
 
-input, label{
+input[type=text], input[type=password], input[type=email], label{
     border-radius: 7px;
     margin: 5px;
     width: 95%;
 }
 
-input{
+input[type=text], input[type=password], input[type=email]{
     padding-left: 8px;
     margin-bottom: 15px;
     border: 1px solid rgb(13, 14, 14);
@@ -136,13 +136,13 @@ input{
         text-align: left;
     }
 
-    .name input{
+    .name input[type=text], .name input[type=password], .name input[type=email]{
         display: inline-block;
         width: 75%;
         height: 75%;
     }
 
-    input, label{
+    input[type=text], input[type=password], input[type=email], label{
         display: inline-block;
         width: 75%;
         height: 75%;
@@ -151,4 +151,19 @@ input{
     #regForm{
         text-align: center;
     }
+}
+
+footer{
+    background: #002a70;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer h5{
+    margin: 5px;
+    color: white;
 }
