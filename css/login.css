@@ -128,7 +128,6 @@ input[type=submit]
     font-weight: 600;
     width: 200px;
     padding: 10px 0;
-    /*transition: 0.3s;*/
     color: white;
     background-color: #f98700;
 }
