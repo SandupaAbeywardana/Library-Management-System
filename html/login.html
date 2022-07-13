@@ -17,7 +17,25 @@
                 <img src="../images/logo_orig.png" alt="logo" height="auto" width="45%">
             </div>
             <div class="login-child">
-                <div class="login-content"><h1>Login</h1></div>
+                <div class="login-content">
+                    <h1>Login</h1>
+                    <form method="POST" action="../php/login.php">
+                        <div class="form-group">
+                            <h3>Username / Email:</h3>
+                            <input type="email"name="email" size="50" required >
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h3>Password:</h3>
+                            <input type="password" name="password" size="50" required >
+                        </div>
+                        <br>
+                        <div class="button">
+                            <input type="submit" value="Login" name="save">
+                        </div>
+                    </form>
+                    <h5>New User? <a href="">Create Account</a></h5>
+                </div>
             </div>
         </div>
     </body>
