@@ -130,14 +130,15 @@ input[type=submit]
     padding: 10px 0;
     color: white;
     background-color: #f98700;
+    transition: all 0.3s;
 }
   
 input[type=submit]:hover
 {
-    /*transform: scale(1.02);*/
+    transform: scale(1.02);
     color: #f98700;
     background-color: white;
-    border: 2px solid #f98700;
-    padding: 8px 0;
+    /*border: 2px solid #f98700;*/
+    /*padding: 8px 0;*/
     /*background-color: #002a70;*/
 }
