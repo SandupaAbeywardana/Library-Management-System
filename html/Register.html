@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register | e-Nanasala</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta lang="en">
+    <link rel="shortcut icon" type="Image/jpg" href="../images/Fav32x32.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Register.css'>
+    <!--<script src='Register.js'></script>-->
+</head>
+<body>
+    <div id="bg">
+        <img src="../images/login_bg.jpg" alt="bgimg" id="bgimg">
+    </div>   
+    <div id="logodiv"><img src="../images/logo_reg.png" alt="logo" id="logo"></div>
+    <section id="formdiv">
+        <form id="regForm" action="" method="POST">
+            <h1>Register</h1>
+            
+            <br>
+            
+            <div class="name">
+                <label for="fName">First Name:<span class="required">*</span></label>
+                <br>
+                <input type="text" id="fName" required>
+            </div>
+            <div class="name">    
+                <label for="lName">Last Name:<span class="required">*</span></label>
+                <br>
+                <input type="text" id="lName" required>
+            </div> 
+            
+            <br>
+            
+            <label for="uName">Username:<span class="required">*</span></label>
+            <br>
+            <input type="text" id="uName" required>
+            
+            <br>
+            
+            <label for="email">Email:<span class="required">*</span></label>
+            <br>
+            <input type="email" id="email" required>
+
+            <br>
+
+            <div class="name">
+                <label for="pwd">Password:<span class="required">*</span></label>
+                <br>
+                <input type="password" id="pwd" required>
+            </div>
+            <div class="name">    
+                <label for="confirmPwd">Confirm Passwrod:<span class="required">*</span></label>
+                <br>
+                <input type="password" id="confirmPwd" required>
+            </div> 
+            
+            <br>
+            <br>
+
+            <div id="btndiv"><button type="submit" id="submitbtn">Sign up</button></div>
+            <br>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </section>
+</body>
+</html>
