@@ -58,6 +58,7 @@ body
 
 #regForm p{
     text-align: center;
+    margin: 0;
 }
 
 #regForm p a{
