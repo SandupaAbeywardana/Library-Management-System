@@ -63,6 +63,13 @@ body{
     margin-bottom: 8px;
 }
 
+#regForm p a{
+    text-decoration: none;
+    text-decoration: underline;
+    color: #002a70;
+    transition: 0.3s;
+}
+
 .name{
     display: inline-block;
     text-align: left;
@@ -82,7 +89,7 @@ input{
     padding-left: 8px;
     margin-bottom: 15px;
     border: 1px solid rgb(13, 14, 14);
-    box-shadow: -3px 4px 11px #000cc554;
+    box-shadow: -3px 4px 11px #002125;
     height: 25px;
 }
 
@@ -98,7 +105,7 @@ input{
     border: none;
     border-radius: 5px;
     padding: 10px 30px;
-    box-shadow: -3px 4px 11px black;
+    box-shadow: -3px 4px 11px #002125;
     background-color: #f98700;
     transition: 0.4s;
 }
