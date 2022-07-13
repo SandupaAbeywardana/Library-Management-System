@@ -142,3 +142,18 @@ input[type=submit]:hover
     /*padding: 8px 0;*/
     /*background-color: #002a70;*/
 }
+
+footer{
+    background: #002a70;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer h5{
+    margin: 5px;
+    color: white;
+}
