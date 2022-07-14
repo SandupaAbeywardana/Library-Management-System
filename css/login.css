@@ -7,6 +7,14 @@ body
     font-family: 'Poppins' sans-serif;
 }
 
+a{
+    transition: 0.3s;
+}
+
+a:focus {
+    font-size: 95%;
+}
+
 .bg img
 {
     width: 100%;
