@@ -157,3 +157,15 @@ footer h5{
     margin: 5px;
     color: white;
 }
+
+h6 a {
+    /* text-decoration: none; */
+    color: #002a70;
+    text-shadow: 0px 0px 10px white;
+}
+h6 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /* color: white; */
+}
