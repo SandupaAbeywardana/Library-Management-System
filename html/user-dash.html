@@ -6,14 +6,12 @@
 
         <link rel="stylesheet"type="text/css" href="../css/user-dash.css">
         <link rel="shortcut icon" type="Image/jpg" href="../images/Fav32x32.png">
+        <script src='../js/user-dash.js'></script>
 
-        <title>Admin Dashboard | e-Nanasala</title>
+        <title>User Dashboard | e-Nanasala</title>
     </head>
     <body>
         <div class="main-container">
-            <div class="logo-display">
-                <img src="../images/logo_reg.png" alt="logo">
-            </div>
             <div class="nav-bar">
                 <div class="user-icon">
                     <img src="../images/icons/user-def.png" alt="user icon">
@@ -24,34 +22,38 @@
                 </div>
                 <div class="menu-components">
                     <hr>
-                    <div class="menu-element">
+                    <div class="menu-element" id="nav_loan">
                         <img src="../images/icons/open-book.png" id="element-icon" alt="icon">
                         <h2>Loan a Book</h2>
                     </div>
                     <hr>
-                    <div class="menu-element">
+                    <div class="menu-element" id="nav_history">
                         <img src="../images/icons/file.png" id="element-icon" alt="icon">
                         <h2>Loan History</h2>
                     </div>
                     <hr>
-                    <div class="menu-element">
+                    <div class="menu-element" id="nav_borrowed">
                         <img src="../images/icons/book.png" id="element-icon" alt="icon">
                         <h2>Books Borrowed</h2>
                     </div>
                     <hr>
-                    <div class="menu-element">
+                    <div class="menu-element" id="nav_membership">
                         <img src="../images/icons/member-card.png" id="element-icon" alt="icon">
                         <h2>Membership</h2>
                     </div>
                     <hr>
-                    <div class="menu-element">
+                    <div class="menu-element" id="nav_settings" onclick="settings()">
                         <img src="../images/icons/profile.png" id="element-icon" alt="icon">
                         <h2>Account Settings</h2>
                     </div>
                     <hr>
                 </div>
             </div>
-            <div class="main-content">main</div>
+            <div class="main-content" id="main">main</div>
+            <div class="acc-settings" id="settings">Account Settings</div>
+            <div class="logo-display">
+                <img src="../images/logo_reg.png" alt="logo">
+            </div>
         </div>
     </body>
 </html>
