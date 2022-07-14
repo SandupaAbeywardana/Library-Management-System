@@ -38,7 +38,7 @@ a:focus {
 }
 
 #logo{
-    width: 235px;
+    width: 270px;
     z-index: 1;
 }
 
@@ -48,7 +48,7 @@ a:focus {
     align-items: center;
     color: white;
     position: relative;
-    top: -30px;
+    top: -45px;
     z-index: 0;
 }
 
