@@ -16,19 +16,28 @@ if(isset($_POST['save']))
 
     $row  = mysqli_fetch_array($sql);
 
-    $accType = $row['AccType'];
-
     if(is_array($row))
     {
-        if($accType == 'USER'){
-            echo('<script>window.location.replace("../html/user-dash.html");</script>');
+        //saving acc details
+        $_SESSION["email"]=$row['Email'];
+        $_SESSION["FirstName"]=$row['FirstName'];
+        $_SESSION["LastName"]=$row['LastName']; 
+        $_SESSION["Password"]=$row['user_Password']; 
+        $_SESSION["ProfilePic"] = $row['ProfilePic'];
+        $_SESSION["accType"] = $row['AccType'];
+        $_SESSION["SignedIn"] = true;
+
+        if($_SESSION["accType"] == 'USER'){
+            echo('<script>window.location.replace("../html/user-dash.php");</script>');
         }
-        elseif($accType == 'ADMIN'){
-            echo('<script>window.location.replace("../html/admin-dash.html");</script>');
+        elseif($_SESSION["accType"] == 'ADMIN'){
+            echo('<script>window.location.replace("../html/admin-dash.php");</script>');
         }
     }
     else
     {
+        $_SESSION["SignedIn"] = false;
+
         echo("<script>alert ('Invalid Email ID/Password')</script>");
         echo('<script>window.location.replace("../html/login.html");</script>');
     }
