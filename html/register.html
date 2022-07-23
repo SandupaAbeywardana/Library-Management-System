@@ -6,9 +6,11 @@
     <title>Register | e-Nanasala</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta lang="en">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/Fav32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/Favicon-16x16.png">
     <link rel="shortcut icon" type="Image/jpg" href="../images/Fav32x32.png">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/register.css'>
-    <script src='../js/register.js'></script>
 </head>
 <body>
     <div id="bg">
@@ -16,7 +18,7 @@
     </div>   
     <div id="logodiv"><img src="../images/logo_reg.png" alt="logo" id="logo"></div>
     <section id="formdiv">
-        <form id="regForm" action="" method="POST">
+        <form id="regForm" action="../php/register.php" method="POST">
             <h1>Register</h1>
             
             <br>
@@ -24,12 +26,12 @@
             <div class="name">
                 <label for="fName">First Name:<span class="required">*</span></label>
                 <br>
-                <input type="text" id="fName" required>
+                <input type="text" id="fName" name="fname" required>
             </div>
             <div class="name">    
                 <label for="lName">Last Name:<span class="required">*</span></label>
                 <br>
-                <input type="text" id="lName" required>
+                <input type="text" id="lName" name="lname" required>
             </div> 
             
             <br>
@@ -42,19 +44,19 @@
             
             <label for="email">Email:<span class="required">*</span></label>
             <br>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" required>
 
             <br>
 
             <div class="name">
                 <label for="pwd">Password:<span class="required">*</span></label>
                 <br>
-                <input type="password" id="pwd" required>
+                <input type="password" id="pwd" name="pwd" minlength="8" required>
             </div>
             <div class="name">    
                 <label for="confirmPwd">Confirm Password:<span class="required">*</span></label>
                 <br>
-                <input type="password" id="confirmPwd" required>
+                <input type="password" id="confirmPwd" minlength="8" required>
             </div> 
 
             <br>
@@ -72,5 +74,8 @@
     <footer>
         <h5>(C) 2022-2025 Sample Solutions. All Rights Reserved</h5>
     </footer>
+
+    
+    <script src='../js/register.js'></script>
 </body>
 </html>
