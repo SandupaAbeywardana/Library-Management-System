@@ -11,6 +11,11 @@
         <title>Admin Dashboard | e-Nanasala</title>
     </head>
     <body>
+
+        <?php 
+        
+        ?>
+
         <div class="main-container">
             <div class="nav-bar">
                 <div class="user-icon">
