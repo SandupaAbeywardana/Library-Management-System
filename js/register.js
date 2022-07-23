@@ -15,7 +15,6 @@ function myFunction(){
 }
 
 var regForm = document.getElementById("regForm");
-
 regForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
