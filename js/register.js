@@ -13,3 +13,20 @@ function myFunction(){
     }
 
 }
+
+var regForm = document.getElementById("regForm");
+
+regForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var pwd = document.getElementById('pwd').value;
+    var confirmPwd = document.getElementById('confirmPwd').value;
+
+    if(pwd == confirmPwd){
+        regForm.submit();
+    }
+    else{
+        alert("Passwords do not Match!");
+    }
+
+});
