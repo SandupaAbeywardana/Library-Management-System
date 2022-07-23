@@ -28,10 +28,10 @@ if(isset($_POST['save']))
         $_SESSION["SignedIn"] = true;
 
         if($_SESSION["accType"] == 'USER'){
-            echo('<script>window.location.replace("../html/user-dash.php");</script>');
+            echo('<script>window.location.replace("../php/user-dash.php");</script>');
         }
         elseif($_SESSION["accType"] == 'ADMIN'){
-            echo('<script>window.location.replace("../html/admin-dash.php");</script>');
+            echo('<script>window.location.replace("../php/admin-dash.php");</script>');
         }
     }
     else
