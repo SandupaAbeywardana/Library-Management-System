@@ -25,12 +25,13 @@ if(isset($_POST['save']))
         $_SESSION["Password"]=$row['user_Password']; 
         $_SESSION["ProfilePic"] = $row['ProfilePic'];
         $_SESSION["accType"] = $row['AccType'];
-        $_SESSION["SignedIn"] = true;
 
         if($_SESSION["accType"] == 'USER'){
+            $_SESSION["UserSignedIn"] = true;
             echo('<script>window.location.replace("../php/user-dash.php");</script>');
         }
         elseif($_SESSION["accType"] == 'ADMIN'){
+            $_SESSION["AdminSignedIn"] = true;
             echo('<script>window.location.replace("../php/admin-dash.php");</script>');
         }
     }
