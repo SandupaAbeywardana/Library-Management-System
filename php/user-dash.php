@@ -11,14 +11,24 @@
         <title>User Dashboard | e-Nanasala</title>
     </head>
     <body>
+        
+        <?php
+            session_start();
+            if(empty($_SESSION["SignedIn"])){
+
+                echo('<script>window.location.replace("../html/login.html");</script>');
+
+            };
+        ?>
+
         <div class="main-container">
             <div class="nav-bar">
                 <div class="user-icon">
-                    <img src="../images/icons/user-def.png" alt="user icon">
+                    <img src="../images/<?php echo $_SESSION["ProfilePic"] ?>" alt="user icon">
                 </div>
                 <div class="user-info">
-                    <h3>Fname Lname</h3>
-                    <h5>email@address.com</h5>
+                    <h3><?php echo $_SESSION["FirstName"] ?>&nbsp&nbsp<?php echo $_SESSION["LastName"] ?></h3>
+                    <h5><?php echo $_SESSION["email"] ?></h5>
                 </div>
                 <div class="menu-components">
                     <hr>
