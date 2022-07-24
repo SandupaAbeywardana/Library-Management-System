@@ -9,19 +9,7 @@
     $exist = mysqli_query($conn,"SELECT * FROM user_accounts where Email='$email'");
     $row  = mysqli_fetch_array($exist);
     if(is_array($row)){
-
-        $SQL = "INSERT INTO user_accounts (Email, FirstName, LastName, user_Password) VALUES ('$Email', '$FirstName', '$LastName', '$Password')";
-
-        if(mysqli_query($conn,$SQL)){
-            echo ("<script type='text/javascript'>alert('Successfully registered')</script>");
-            echo('<script>window.location.replace("../HTML/login.html");</script>');
-        }
-        else{
-            echo "<script>alert ('Registration unsuccessful.<br>')</script>";
-        }
-
-    }
-    else{
+        
         echo(
             "<script>
                 if(confirm('Email already exist.  Login?') == true) {
@@ -33,6 +21,19 @@
             </script>"
         );
         
+    }
+    else{
+
+        $SQL = "INSERT INTO user_accounts (Email, FirstName, LastName, user_Password) VALUES ('$Email', '$FirstName', '$LastName', '$Password')";
+
+        if(mysqli_query($conn,$SQL)){
+            echo ("<script type='text/javascript'>alert('Successfully registered')</script>");
+            echo('<script>window.location.replace("../HTML/login.html");</script>');
+        }
+        else{
+            echo "<script>alert ('Registration unsuccessful.<br>')</script>";
+        }
+
     }
 	
 	mysqli_close($conn);
