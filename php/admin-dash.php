@@ -14,7 +14,7 @@
 
         <?php 
             session_start();
-            if(empty($_SESSION["SignedIn"])){
+            if(empty($_SESSION["AdminSignedIn"])){
 
                 echo('<script>window.location.replace("../html/login.html");</script>');
 
