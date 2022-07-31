@@ -12,13 +12,30 @@
     </head>
     <body>
 
-        <?php 
+    <?php
             session_start();
-            if(empty($_SESSION["AdminSignedIn"])){
 
-                echo('<script>window.location.replace("../html/login.html");</script>');
+            /*$abc = $_SESSION["AdminSignedIn"];
+            echo("<script>console.log('$abc');</script>");
 
-            };
+            if($_SESSION["AdminSignedIn"] == True){
+
+                $fname = $_SESSION['FirstName'];
+                echo("<script>alert ('Welcome $fname')</script>");
+
+            }*/
+            
+            if($_SESSION["UserSignedIn"] == True){
+
+                echo('<script>window.location.replace("../php/user-dash.php");</script>');
+
+            }
+            elseif($_SESSION["AdminSignedIn"] != True){
+                
+                echo("<script>alert ('Please Login')</script>");
+                echo('<script>window.location.replace("../php/loginhtml.php");</script>');
+
+            }
         ?>
 
         <div class="main-container">
@@ -57,6 +74,10 @@
                         <h2>Account Settings</h2>
                     </div>
                     <hr>
+                    <div class="menu-element" id="nav_logout" onclick="logout()">
+                        <img src="../images/icons/logout.png"  alt="icon">
+                        <h2>Sign Out</h2>
+                    </div>
                 </div>
             </div>
             <div class="main-content" id="main">main</div>

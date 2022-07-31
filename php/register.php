@@ -13,7 +13,7 @@
         echo(
             "<script>
                 if(confirm('Email already exist.  Login?') == true) {
-                    window.location.replace('../HTML/login.html');
+                    window.location.replace('../php/loginhtml.php');
                 }
                 else{
                     window.location.replace('../HTML/register.html');
@@ -28,7 +28,7 @@
 
         if(mysqli_query($conn,$SQL)){
             echo ("<script type='text/javascript'>alert('Successfully registered')</script>");
-            echo('<script>window.location.replace("../HTML/login.html");</script>');
+            echo('<script>window.location.replace("../php/loginhtml.php");</script>');
         }
         else{
             echo "<script>alert ('Registration unsuccessful.<br>')</script>";
