@@ -3,6 +3,7 @@
 // Create connection
 
 session_start();
+
 if(isset($_POST['save']))
 {
     extract($_POST);
@@ -37,10 +38,11 @@ if(isset($_POST['save']))
     }
     else
     {
-        $_SESSION["SignedIn"] = false;
+        $_SESSION["UserSignedIn"] = false;
+        $_SESSION["AdminSignedIn"] = false;
 
         echo("<script>alert ('Invalid Email ID/Password')</script>");
-        echo('<script>window.location.replace("../html/login.html");</script>');
+        echo('<script>window.location.replace("../php/loginhtml.php");</script>');
     }
 }
 
