@@ -43,7 +43,7 @@
                     <img src="../images/<?php echo $_SESSION["ProfilePic"] ?>" alt="user icon">
                 </div>
                 <div class="user-info">
-                    <h3><?php echo $_SESSION["FirstName"] ?>&nbsp&nbsp<?php echo $_SESSION["LastName"] ?></h3>
+                    <h3><?php echo $_SESSION["FirstName"] ?>&nbsp<?php echo $_SESSION["LastName"] ?></h3>
                     <h5><?php echo $_SESSION["email"] ?></h5>
                 </div>
                 <div class="menu-components">
