@@ -42,7 +42,7 @@
                         </div>
                         <h6><a href="">Forgot Password?</a></h6>
                     </form>
-                    <h5>New User? <a href="register.html">Create Account</a></h5>
+                    <h5>New User? <a href="../html/register.html">Create Account</a></h5>
                 </div>
             </div>
         </div>
